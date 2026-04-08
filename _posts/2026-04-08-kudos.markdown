@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Kudos"
+date: 2024-06-08 06:29:45 -0300
+categories: kudos
+---
+
+Today's breakfast was three eggs, bacon, and sausages. All from a little local farm market. I also wanted to solve this question from John Taylor's Classical Mechanics. Specifically, the chapter of Calculus of Variations.
+
+The shortest path between two points on a *curved surface*, such as the surface of a sphere, is called a **geodesic**. To find a geodesic, one has first to set up an integral that gives the length of a path on the surface in question. This will always be similar to the integral (6.2) but may be more complicated (depending on the nature of the surface) and may involve different coordinates than $x$ and $y$. 
+To illustrate this, use spherical polar coordinates $(r, \theta, \phi)$ to show that the length of a path joining two points on a sphere of radius $R$ is:
+
+$$ L = R \int_{\theta_1}^{\theta_2} \sqrt{1 + \sin^2 \theta \, \phi'(\theta)^2} \, d\theta \tag{6.41} $$
+
+if $(\theta_1, \phi_1)$ and $(\theta_2, \phi_2)$ specify the two points and we assume that the path is expressed as $\phi = \phi(\theta)$.
+
+Let me know if you can solve it!

@@ -4,15 +4,25 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<div style="display: flex; gap: 20px; align-items: start; max-width: 100%;" class="about-container">
+  <img src="{{ '/images/Me.png' | relative_url }}" 
+       style="flex-shrink: 0; width: 300px; height: auto; border: 1px solid #ddd; border-radius: 4px; padding: 3px;"
+       class="profile-photo" />
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+  <div style="flex: 1;" class="about-text">
+"All is pretty."
+  </div>
+</div>
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+On this blog, I write about
+1. My physics and math study. Mostly my undegraduate courses containing self study notes for classes such as classical mechanics, differential equations, and more.
+2. Tricks and tips as a student studying STEM that will be useful in one's undegraduate.
+3. Occasional random rants and comments on world or local events.
+
+My math and physics notes are somewhat selfish. Written for myself to improve my understanding, and represents as a running log of my personal learning progress. Feel free to
+email me if you find any post confusing, helpful, spot an error, or have something to say.
+
+I wanna complete my study and eventually aim doing scientific work, more specifically, meteorology. Forecasting the weather. I am also interested in research in atmospheric science,
+to better improve weather models and miscallanea.
 
 
-[jekyll-organization]: https://github.com/jekyll
