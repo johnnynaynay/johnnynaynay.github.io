@@ -2,7 +2,7 @@
 layout: post
 title: "Classical Mechanics Question"
 date: 2026-04-08 01:53:45 -0300
-categories: [Fortnite]
+categories: [Physics]
 ---
 
 There's a question that I got stuck on, specifically, the following question:
