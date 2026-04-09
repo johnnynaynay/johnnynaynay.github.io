@@ -1,1 +1,1 @@
-# johnnynaynay.github.io
+Using mostly the minima theme from Jekyll.
