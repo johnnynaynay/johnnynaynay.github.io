@@ -21,7 +21,9 @@
     .main-content {
       padding: 0 20px;
     }
+
   </style>
+
 
   <body>
 
@@ -38,3 +40,33 @@
   </body>
 
 </html>
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+  const searchInput = document.getElementById('search-input');
+  const resultsContainer = document.getElementById('results-container');
+
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: searchInput,
+    resultsContainer: resultsContainer,
+    json: '{{ "/search.json" | relative_url }}',
+    searchResultTemplate: `
+      <li style="padding: 8px 12px; border-bottom: 1px solid #eee;">
+        <a href="{url}" style="text-decoration: none; color: #2a7ae2; font-size: 14px; font-weight: bold; display: block;">{title}</a>
+        <small style="color: #888; font-size: 11px;">{date} • {tags}</small>
+      </li>
+    `,
+    noResultsText: '<li style="padding: 10px; color: #999; font-size: 13px;">No posts found.</li>',
+    limit: 10,
+    fuzzy: false
+  });
+
+  // HIDE RESULTS WHEN CLICKING OUTSIDE
+  document.addEventListener('click', function(event) {
+    const isClickInside = searchInput.contains(event.target) || resultsContainer.contains(event.target);
+
+    if (!isClickInside) {
+      resultsContainer.innerHTML = ''; // This clears the list and hides it
+    }
+  });
+</script>
+

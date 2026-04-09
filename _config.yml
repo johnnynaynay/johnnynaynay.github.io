@@ -33,6 +33,12 @@ song_of_day:
   cover: "/images/album-cover.jpg" # URL for Album Cover Image
   spotify_url: "https://open.spotify.com/track/0awZwmlC6pxH65KTZpadmX?si=f726e16840d7430b" # Direct link for the icon
 
+equation_of_day:
+  name: "Euler-Lagrange Equation"
+  latex: >-
+    $$ \frac{\partial L}{\partial q_i} - \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_i} \right) = 0 $$
+  description: "The fundamental equation of motion in analytical mechanics."
+
 # Build settings
 theme: minima
 plugins:
