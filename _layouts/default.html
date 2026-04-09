@@ -3,17 +3,33 @@
 
   {%- include head.html -%}
 
+  <style>
+    /* GLOBAL WIDE-SCREEN OVERRIDES */
+    /* This ensures your header links and footer links stay at the edges of the screen */
+    .wrapper, .site-header .wrapper, .site-footer .wrapper, .page-content .wrapper {
+      max-width: 1600px !important; 
+      width: 95% !important;
+      margin: 0 auto !important;
+    }
+
+    /* Padding for pages without sidebars (like the About page) */
+    .page-content {
+      padding: 30px 0;
+    }
+
+    /* Keeps text from hitting the very edge of the monitor on wide layouts */
+    .main-content {
+      padding: 0 20px;
+    }
+  </style>
+
   <body>
 
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper layout-with-sidebar">
-        
-        <div class="main-content">
+      <div class="wrapper">
           {{ content }}
-        </div>
-
       </div>
     </main>
 

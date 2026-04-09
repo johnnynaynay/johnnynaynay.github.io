@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Blog
+title: Johnny's Blog
 email: johnnynaynay@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   
@@ -26,6 +26,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: johnnynaynay
 github_username:  johnnynaynay
+
+song_of_day:
+  title: "Freaking Out the Interstate"               # The Song Name
+  artist: "Briston Maroney"                     # The Band/Artist Name
+  cover: "/images/album-cover.jpg" # URL for Album Cover Image
+  spotify_url: "https://open.spotify.com/track/0awZwmlC6pxH65KTZpadmX?si=f726e16840d7430b" # Direct link for the icon
 
 # Build settings
 theme: minima
