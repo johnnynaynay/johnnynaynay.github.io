@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Fortnite"
+date: 2026-04-08 01:53:45 -0300
+categories: [Fortnite]
+---
+
+
+It's been almost 8 years since the first Chapter of Fortnite. In memory of that wonderful time, I have attached a photo
+that I took during that era, truly a goated era.
+
+
+![]({{ '/images/Fortnite.jpg' | relative_url }})
+
+Yes, I did predict the 67 joke.
