@@ -5,12 +5,12 @@ permalink: /about/
 ---
 
 <div style="display: flex; gap: 20px; align-items: start; max-width: 100%;" class="about-container">
-  <img src="{{ '/images/myself/Me.png' | relative_url }}" 
+  <img src="{{ '/images/myself/JacketMe.jpg' | relative_url }}" 
        style="width: 300px; flex-shrink: 0;" 
        class="profile-photo" />
 
   <div style="flex: 1;" class="about-text">
-    "All is pretty."
+    "Stay mysterious."
   </div>
 </div>
 
