@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Classical Mechanics Question"
-date: 2024-06-08 06:29:45 -0300
+date: 2024-06-08 02:33:45 -0300
 categories: [Physics]
 ---
 
