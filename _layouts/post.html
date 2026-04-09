@@ -58,26 +58,6 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
-    
-    <div class="share-section" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
-      <p style="font-size: 14px; font-weight: bold; color: #555; margin-bottom: 10px;">Share this:</p>
-      <div style="display: flex; gap: 10px;">
-        <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" 
-           target="_blank" 
-           style="border: 1px solid #ddd; padding: 5px 12px; border-radius: 4px; font-size: 13px; text-decoration: none; color: #333;">
-           Twitter
-        </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" 
-           target="_blank" 
-           style="border: 1px solid #ddd; padding: 5px 12px; border-radius: 4px; font-size: 13px; text-decoration: none; color: #333;">
-           Facebook
-        </a>
-        <a href="mailto:?subject={{ page.title | url_encode }}&body=Check out this post: {{ page.url | absolute_url }}" 
-           style="border: 1px solid #ddd; padding: 5px 12px; border-radius: 4px; font-size: 13px; text-decoration: none; color: #333;">
-           Email
-        </a>
-      </div>
-    </div>
   </div>
 
   {%- if site.disqus.shortname -%}

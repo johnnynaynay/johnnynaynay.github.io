@@ -139,28 +139,6 @@ layout: default
             <div class="post-content">
               {{ post.content }}
             </div>
-
-            <div class="share-section" style="margin-top: 20px; padding-top: 10px;">
-                 <p style="font-size: 13px; font-weight: bold; color: #777; margin-bottom: 8px;">Share this:</p>
-                 <div style="display: flex; gap: 10px;">
-                      <a href="https://twitter.com/intent/tweet?text={{ post.title | url_encode }}&url={{ post.url | absolute_url }}" 
-                         target="_blank" 
-                         style="border: 1px solid #eee; padding: 4px 10px; border-radius: 4px; font-size: 12px; text-decoration: none; color: #666;">
-                            Twitter
-                      </a>
-
-                      <a href="https://www.facebook.com/sharer/sharer.php?u={{ post.url | absolute_url }}" 
-                         target="_blank" 
-                         style="border: 1px solid #eee; padding: 4px 10px; border-radius: 4px; font-size: 12px; text-decoration: none; color: #666;">
-                            Facebook
-                      </a>
-
-                      <a href="mailto:?subject={{ post.title | url_encode }}&body=Check out this post: {{ post.url | absolute_url }}" 
-                         style="border: 1px solid #eee; padding: 4px 10px; border-radius: 4px; font-size: 12px; text-decoration: none; color: #666;">
-                            Email
-                      </a>
-                 </div>
-            </div>
           </li>
         {%- endfor -%}
       </ul>
