@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+math: true
 ---
 
 <div style="display: flex; gap: 20px; align-items: start; max-width: 100%;" class="about-container">

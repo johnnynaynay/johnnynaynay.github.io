@@ -2,6 +2,7 @@
 layout: page
 title: Writing
 permalink: /writing/
+math: true
 ---
 
 # Bookish collections of physics and math writing.
