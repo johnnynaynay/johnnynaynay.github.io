@@ -11,7 +11,7 @@ math: true
        class="profile-photo" />
 
   <div style="flex: 1;" class="about-text">
-    "Stay mysterious."
+    "The world is your oyster, I'm just living in it."
   </div>
 </div>
 
