@@ -1,0 +1,16 @@
+---
+layout: base
+---
+<div class="page-layout">
+    <div class="toc-container">
+         <strong>Table of contents</strong>
+         <div id="toc-content">
+             {{ content | toc_only }}
+         </div>
+    </div>
+
+    <div class="page">
+         <a href="{{ "/" | relative_url }}">&larr; {{ site.title }}</a>
+        {{ content }}
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="sidebar">
+     <img class="border-img" src="{{ site.avatar | relative_url }}">
+     <strong>{{ site.author }}</strong>
+     <p>{{ site.description }}</p>
+
+
+     <strong>Socials</strong>
+     <ul class="socials">
+          {%- for link in site.social_links -%}
+          <li>
+               <a href="{{ link.user_url }}">
+               <i class="fa-brands fa-{{ link.platform | lowercase }}"></i>
+               {{ link.platform | capitalize }}
+          </a>
+          {%- endfor -%}
+     </ul>
+
+     <hr>
+     {%- include header.html -%}
+</div>
+
+

@@ -1,0 +1,37 @@
+
+/* The main container for the code */
+.highlight {
+  margin: 20px 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background-color: #fdfdfd;
+  overflow: hidden; /* Keeps the header corners rounded */
+}
+
+.highlight::before {
+  content: "</>";
+  display: block;
+  background-color: #f5f5f5;
+  padding: 8px 15px;
+  border-bottom: 1px solid #e1e1e1;
+  font-family: monospace;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 20px;
+  overflow-x: auto;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.highlight code {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+}
+
+
+
+

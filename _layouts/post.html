@@ -1,54 +1,8 @@
 ---
-layout: default
-math: true
+layout: page
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+<h4 class="no_toc">{{ page.date | date: date_format }}</h4>
+<h1>{{ page.title | escape }}</h1>
 
-  <header class="post-header" style="margin-bottom: 30px;">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    
-    <div class="post-meta" style="color: #666; font-size: 15px; margin-top: 10px; display: flex; flex-direction: column; gap: 8px;">
-      <div>
-        <i class="fa-regular fa-calendar" style="margin-right: 5px;"></i>
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {{ page.date | date: date_format }}
-        </time>
-        
-        {% if page.categories.size > 0 %}
-          <span style="margin-left: 15px;">
-            <i class="fa-solid fa-folder-open" style="margin-right: 5px; color: #888;"></i> 
-            {% for category in page.categories %}
-              {{ category }}{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-          </span>
-        {% endif %}
-
-        {%- if page.author -%}
-          <span style="margin-left: 15px;">
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-          </span>
-        {%- endif -%}
-      </div>
-
-      {% if page.tags.size > 0 %}
-        <div>
-          <i class="fa-solid fa-tags" style="margin-right: 5px; color: #888;"></i>
-          {% for tag in page.tags %}
-            <span style="background: #eef2f7; color: #4a6fa5; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #d1d9e6; margin-right: 5px;">#{{ tag }}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </div>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+{{ content }}

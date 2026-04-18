@@ -1,0 +1,38 @@
+---
+layout: base
+---
+
+{{ content }}
+
+<div class="site">
+     {%- include sidebar.html -%}
+
+     {% if site.paginate %}
+          {% assign posts = paginator.posts %}
+     {% else %}
+          {% assign posts = site.posts %}
+     {% endif %}
+
+     {%- if posts.size > 0 -%}
+          <ul class="list">
+               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+               {%- for post in posts -%}
+                    <h4 class="post-meta">{{ post.date | date: date_format }}</h4>
+                    <h1>
+                         {{ post.title | escape }}
+                    </h1>
+                    
+                    {{ post.content | truncatewords: 100 }}
+
+                    <h4><a class="post-link" href="{{ post.url | relative_url }}">
+                              &rarr; Read more
+                         </a></h4>
+                    <hr>
+
+                    {%- if site.minima.show_excerpts -%}
+                    {{ post.excerpt }}
+                    {%- endif -%}
+               {%- endfor -%}
+          </ul>
+     {%- endif -%}
+</div>

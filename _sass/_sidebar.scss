@@ -1,0 +1,26 @@
+
+// Sidebar
+.sidebar {
+     flex: 1;
+     box-sizing: border-box;
+     margin: 30px 30px;
+     height: fit-content;
+}
+
+// Socials on the sidebar
+.socials {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px;
+}
+
+// Profile picture
+.avatar {
+     margin: 0;
+     width: 70%;
+     height: 50%;
+}
+
+

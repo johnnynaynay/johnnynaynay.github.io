@@ -1,0 +1,22 @@
+// Layout of the entire site
+.site-layout {
+     margin: 30px auto;
+     max-width: 1200px;
+}
+
+// Container for the homepage
+.site {
+     display: flex;
+     box-sizing: border-box;
+}
+
+// The list of posts in the homepage
+.list {
+     flex: 2;
+     margin: 30px 30px;
+     box-sizing: border-box;
+     height: fit-content;
+     width: fit-content;
+}
+
+

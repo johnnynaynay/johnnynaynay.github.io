@@ -1,33 +1,9 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
+<footer class="footer">
   <div class="wrapper">
-    <div class="footer-col-wrapper" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 20px 0;">
-      
-      <div class="footer-col footer-col-1" style="flex: 2; max-width: 600px;">
-        <h2 class="footer-heading" style="margin-bottom: 10px;">{{ site.title | escape }}</h2>
-        <ul class="contact-list" style="list-style: none; padding: 0; margin-bottom: 15px;">
-          <li class="p-name" style="font-weight: bold;">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}" style="color: #2a7ae2;">{{ site.email }}</a></li>
-          {%- endif -%}
-        </ul>
-        <p style="font-size: 14px; color: #666; line-height: 1.5;">{{- site.description | escape -}}</p>
-      </div>
-
-      <div class="footer-col footer-col-2" style="flex: 1; text-align: right;">
-        <h3 style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 10px;">Social</h3>
-        <div style="display: inline-block; text-align: left;">
-            {%- include social.html -%}
-        </div>
-      </div>
-
-    </div>
+    <p class="copyright">
+      &copy; {{ "now" | date: "%Y" }} {{ site.title | default: site.author }}
+    </p>
   </div>
 </footer>
+
+
