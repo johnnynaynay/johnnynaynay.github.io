@@ -25,7 +25,7 @@ by linear dielectric material of permittivity $\epsilon$. Find the potential at 
 ### Solution
 
 To find the potential at the center relative to infinity, we need the electric field, and we must look at all space.
-First, the electric displacement $\vec{D}$ is only in the radial distance, thefore it must only be a function of
+First, the electric displacement $\vec{D}$ is only in the radial distance, therefore it must only be a function of
 $\vec{D(r)}$. 
 
 We already know, for a conducting sphere of radius $a$, the electric field inside is 0, then 
@@ -144,7 +144,6 @@ $$
 $$
 
 
-
 My procedure when I am doing problems with this law is to start with the cross product and identifying our $\vec{dl}$ and $\hat{r}$
 Let's compute the cross-product, notice, $\vec{dl}$ is only in the z-direction.
 
@@ -180,7 +179,6 @@ From here, the physics is pretty much done and it's just math. More specifically
 If you remember your calculus days, we must use the substitution $z=a\tan\phi$. Taking the derivative yields $\displaystyle \frac{dz}{d\phi} = a\sec^2\phi$, then $\displaystyle dz = \frac{ad\phi}{cos^2\phi}$. 
 Now, I am going to write one more thing which is $\displaystyle \cos\phi = \frac{a}{r}$, using trigonometry once again.
 
-<span class="sidenote">Several variations of this sentence are known.</span>
 
 Let's rewrite the denominator inside the integral from what we know earlier to simplify the problem, and take out the constant $a$:
 
