@@ -1,11 +1,9 @@
-
-/* The main container for the code */
 .highlight {
   margin: 20px 0;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
   background-color: #fdfdfd;
-  overflow: hidden; /* Keeps the header corners rounded */
+  overflow: hidden;
 }
 
 .highlight::before {
@@ -31,7 +29,3 @@
 .highlight code {
   font-family: "JetBrains Mono", "Fira Code", monospace;
 }
-
-
-
-

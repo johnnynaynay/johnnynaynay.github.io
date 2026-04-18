@@ -14,7 +14,7 @@ layout: base
      {% endif %}
 
      {%- if posts.size > 0 -%}
-          <ul class="list">
+          <ul class="site-list">
                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                {%- for post in posts -%}
                     <h4 class="post-meta">{{ post.date | date: date_format }}</h4>

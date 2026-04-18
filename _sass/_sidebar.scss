@@ -1,26 +1,43 @@
-
-// Sidebar
 .sidebar {
-     flex: 1;
-     box-sizing: border-box;
-     margin: 30px 30px;
-     height: fit-content;
+  flex: 1;
+  margin: 30px;
 }
 
-// Socials on the sidebar
+     
 .socials {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 15px;
+  padding: 0px;
 }
 
-// Profile picture
-.avatar {
-     margin: 0;
-     width: 70%;
-     height: 50%;
+.social-list {
+  list-style-type: none;
+}
+
+.avatar-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
 }
 
 
+@media (max-width: 768px) {
+  .sidebar {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .avatar {
+    width: 150px;
+  }
+  .socials {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .avatar {
+    max-width: 120px;
+  }
+}

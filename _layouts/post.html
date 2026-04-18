@@ -2,7 +2,8 @@
 layout: page
 ---
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
 <h4 class="no_toc">{{ page.date | date: date_format }}</h4>
-<h1>{{ page.title | escape }}</h1>
+<h1 class="no_toc">{{ page.title | escape }}</h1>
 
 {{ content }}

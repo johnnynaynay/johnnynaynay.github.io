@@ -1,4 +1,4 @@
-title: Home
+title: Spider
 author: Johnny 2026
 description: Physics and Mathematics Student at Dalhousie University. Interested in applied physics and mathematics (meteorology), computing, Vim.
 avatar: "./assets/images/me.png"
@@ -12,10 +12,9 @@ social_links:
     user_url: "https://x.com/johnnynaynay"
   - platform: instagram
     user_url: "https://instagram.com/johnnynaynay"
+  - platform: spotify
+    user_url: "https://open.spotify.com/user/4wrnu63xlunbdovbv9m6toq0o"
 
 plugins:
   - jekyll-feed
-  - jekyll-toc
 
-toc:
-  no_toc_section_class: "no_toc" # Add this class to any heading you want to hide

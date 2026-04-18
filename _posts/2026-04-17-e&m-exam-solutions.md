@@ -14,7 +14,7 @@ Solutions may look different, but it's the correct answer. I just used a specifi
 simplified differently.
 
 
-### Question 1 (Electric Displacement)
+## Electric Displacement
 
 A metal sphere of radius $a$ carries a charge $Q$. It is surrounded, out to radius $b$,
 by linear dielectric material of permittivity $\epsilon$. Find the potential at the center
@@ -22,7 +22,7 @@ by linear dielectric material of permittivity $\epsilon$. Find the potential at 
 
 ![em-q1](/assets/figures/em-q1.svg){: .centered}
 
-#### Solution
+### Solution
 
 To find the potential at the center relative to infinity, we need the electric field, and we must look at all space.
 First, the electric displacement $\vec{D}$ is only in the radial distance, thefore it must only be a function of
@@ -109,13 +109,11 @@ We have to split this integrals up to compensate for our different electric fiel
 
 $$
 \begin{aligned}
--\int_{\infty}^{0} E \cdot dl &= -\int_{\infty}^{b}\frac{1}{4\pi \epsilon_{0}}\frac{Q}{r^2} dr - \int_{b}^{a} \frac{1}{4\pi \epsilon}\frac{Q}{r^2}dr
+-\int_{\infty}^{0} E \cdot dl = -\int_{\infty}^{b}\frac{1}{4\pi \epsilon_{0}}\frac{Q}{r^2} dr - \int_{b}^{a} \frac{1}{4\pi \epsilon}\frac{Q}{r^2}dr
 -\cancelto{0}{\int_{a}^{0} 0 dr} \\
-
-
-&= - \frac{Q}{4\pi} \left[ \frac{1}{\epsilon_{0}} \int_{\infty}^{b} \frac{1}{r^2}dr + \frac{1}{\epsilon} \int_{b}^{a} \frac{1}{r^2}dr\right] \\
-&= - \frac{Q}{4\pi} \left[ \frac{1}{\epsilon_{0}} \left( \frac{-1}{b} - \cancelto{0}{\frac{-1}{\infty}} \right) +\frac{1}{\epsilon} \left( \frac{-1}{a} - \frac{-1}{b} \right)  \right] \\
-&= - \frac{Q}{4\pi} \left[ \frac{-1}{\epsilon_{0}b} - \frac{1}{\epsilon a} + \frac{1}{b} \right]
+= - \frac{Q}{4\pi} \left[ \frac{1}{\epsilon_{0}} \int_{\infty}^{b} \frac{1}{r^2}dr + \frac{1}{\epsilon} \int_{b}^{a} \frac{1}{r^2}dr\right] \\
+= - \frac{Q}{4\pi} \left[ \frac{1}{\epsilon_{0}} \left( \frac{-1}{b} - \cancelto{0}{\frac{-1}{\infty}} \right) +\frac{1}{\epsilon} \left( \frac{-1}{a} - \frac{-1}{b} \right)  \right] \\
+= - \frac{Q}{4\pi} \left[ \frac{-1}{\epsilon_{0}b} - \frac{1}{\epsilon a} + \frac{1}{b} \right]
 \end{aligned}
 $$
 
@@ -126,7 +124,7 @@ $$
 $$
 
 
-### Question 2 (Biot-Savart Law)
+## Biot-Savart Law
 
 What is the magnetic field from a straight current carrying wire of infinite
 length?
@@ -137,7 +135,7 @@ Derive the equation using:
 
 ![em-q3](/assets/figures/em-q3.svg){: .centered}
 
-#### Solution
+### Solution
 
 The Biot-Savart Law is given by: 
 
@@ -176,11 +174,15 @@ $$
 \end{aligned}
 $$
 
-From here, the physics is pretty much done and it's just math. More specifically, we have to use trigonometric substitution in order to solve the integral.
-If you remember your calculus days, we must use the substitution $z=a\tan\phi$. Taking the derivative yields $\displaystyle \frac{dz}{d\phi} = a\sec^2\phi$, then $\displaystyle dz = \frac{ad\phi}{cos^2\phi}$. Note, $\displaystyle sec^2\phi = \frac{1}{cos^2\phi}$ Now, I am going to write one more thing
-which is $\displaystyle \cos\phi = \frac{a}{r}$, using trigonometry once again.
 
-Let's take out the constants $a$.
+
+From here, the physics is pretty much done and it's just math. More specifically, we have to use trigonometric substitution in order to solve the integral.
+If you remember your calculus days, we must use the substitution $z=a\tan\phi$. Taking the derivative yields $\displaystyle \frac{dz}{d\phi} = a\sec^2\phi$, then $\displaystyle dz = \frac{ad\phi}{cos^2\phi}$. 
+Now, I am going to write one more thing which is $\displaystyle \cos\phi = \frac{a}{r}$, using trigonometry once again.
+
+<span class="sidenote">Several variations of this sentence are known.</span>
+
+Let's rewrite the denominator inside the integral from what we know earlier to simplify the problem, and take out the constant $a$:
 
 $$
 \begin{aligned}
@@ -216,7 +218,7 @@ $$
 \boxed{B = \frac{\mu_{0}I}{2\pi a}}
 $$
 
-### To be continued...
+## To be continued...
 
 Not gonna lie, I got to this point at 4:24 AM, and I am going to bed, but I'll continue this in the morning.
 

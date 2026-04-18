@@ -1,22 +1,45 @@
-// Layout of the entire site
+.top-layout {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  box-sizing: border-box;
+}
+
 .site-layout {
-     margin: 30px auto;
-     max-width: 1200px;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
 }
 
-// Container for the homepage
 .site {
-     display: flex;
-     box-sizing: border-box;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
 
-// The list of posts in the homepage
-.list {
-     flex: 2;
-     margin: 30px 30px;
-     box-sizing: border-box;
-     height: fit-content;
-     width: fit-content;
+.site-list {
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
 }
 
+@media (max-width: 768px) {
+  .site {
+    gap: 20px;
+  }
+}
 
+@media (max-width: 480px) {
+  .site {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .site-layout {
+    padding: 30px 15px;
+  }
+}
