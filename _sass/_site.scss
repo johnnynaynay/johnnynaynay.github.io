@@ -8,6 +8,7 @@
 }
 
 .site-layout {
+  flex: 1;
   max-width: 1150px;
   margin: 0 auto;
   padding: 50px 20px;
@@ -21,11 +22,22 @@
 }
 
 .site-list {
-  flex: 1 1 0;
+  flex: 2;
   min-width: 0;
-  margin: 0;
+  margin: 30px 30px;
   padding: 0;
 }
+
+.footer {
+    position: static;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 
 @media (max-width: 768px) {
   .site {

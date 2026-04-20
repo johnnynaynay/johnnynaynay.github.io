@@ -216,7 +216,7 @@ $$
 \boxed{B = \frac{\mu_{0}I}{2\pi a}}
 $$
 
-## To be continued...
+## Ampere's Law 
 
-Not gonna lie, I got to this point at 4:24 AM, and I am going to bed, but I'll continue this in the morning.
+
 
